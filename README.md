@@ -6,7 +6,7 @@ Landing page de uma loja fictícia de produtos de anime e cultura geek, criada c
 [COLE AQUI O LINK DO GITHUB PAGES]
 
 ## Link do repositório
-[https://annapoletto-maker.github.io/nakama-store/]
+[https://github.com/annapoletto-maker/README.md]
 
 ## Sobre o projeto
 A Nakama Store vende action figures, mangás, camisetas e itens de decoração dos animes mais populares. A landing page apresenta a loja e leva o visitante, por meio de um botão, ao site de vendas.
