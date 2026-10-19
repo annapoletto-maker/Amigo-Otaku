@@ -3,7 +3,7 @@
 Landing page de uma loja fictícia de produtos de anime e cultura geek, criada como trabalho acadêmico.
 
 ## Link da página
-[COLE AQUI O LINK DO GITHUB PAGES]
+[https://annapoletto-maker.github.io/README.md/]
 
 ## Link do repositório
 [https://github.com/annapoletto-maker/README.md]
