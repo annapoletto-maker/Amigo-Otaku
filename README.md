@@ -3,7 +3,7 @@
 Landing page de uma loja fictícia de produtos de anime e cultura geek, criada como trabalho acadêmico.
 
 ## Link da página
-[https://annapoletto-maker.github.io/README.md/]
+[https://annapoletto-maker.github.io/Nakama-store/](https://annapoletto-maker.github.io/Nakama-store/)
 
 ## Link do repositório
 [https://github.com/annapoletto-maker/Nakama-store](https://github.com/annapoletto-maker/Nakama-store)
