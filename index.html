@@ -11,7 +11,6 @@
 <meta property="og:type" content="website">
 <meta property="og:title" content="Anime Store | O universo do anime em um só lugar">
 <meta property="og:description" content="Mangás, figuras de ação e camisetas originais com entrega para todo o Brasil.">
-<!-- TROQUE pelo link completo da sua imagem de divulgação (ex.: https://seu-usuario.github.io/repo/img/hero.jpg) -->
 <meta property="og:image" content="https://annapoletto-maker.github.io/Nakama-store/hero.jpg">
 <meta name="twitter:card" content="summary_large_image">
 <script type="application/ld+json">
@@ -36,7 +35,7 @@ section{padding:84px 0}
 .sub{color:var(--suave);max-width:40em;margin:12px auto 0}
 .icone{width:1.5em;height:1.5em;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;flex:none}
 
-/* ===== Botões (todos levam ao site de vendas) ===== */
+/* ===== Botões ===== */
 .btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;background:var(--vermelho);color:#fff;text-decoration:none;
   font-weight:700;font-size:1.05rem;text-transform:uppercase;letter-spacing:.4px;padding:15px 30px;border-radius:10px;border:2px solid var(--vermelho);
   cursor:pointer;transition:transform .15s,background .15s,box-shadow .15s}
@@ -45,8 +44,8 @@ section{padding:84px 0}
 .btn-contorno:hover{background:#fff;color:var(--preto);border-color:#fff;box-shadow:none}
 .btn-pequeno{padding:10px 20px;font-size:.9rem}
 
-/* ===== Faixa de aviso no topo ===== */
-.aviso{background:var(--vermelho);color:#fff;text-align:center;font-weight:600;font-size:.92rem;padding:8px 14px}
+/* ===== Faixa de aviso ===== */
+.aviso{background:var(--vermelho);color:#fff;text-align:center;font-weight:600;font-size:.92rem;padding:8px 14px;position:relative;z-index:40}
 .aviso a{text-decoration:underline}
 
 /* ===== Cabeçalho ===== */
@@ -58,24 +57,100 @@ nav ul{display:flex;gap:30px;list-style:none;margin:0;padding:0}
 nav a{text-decoration:none;font-weight:600;font-size:.98rem}
 nav a:hover{color:var(--vermelho-claro)}
 
-/* ===== Hero ===== */
-.hero{background:radial-gradient(circle at 78% 35%,rgba(229,16,47,.30),transparent 55%),var(--preto);color:#fff;padding:72px 0 80px}
-.hero .wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:40px;align-items:center}
-.hero h1{font-size:clamp(2.8rem,6.5vw,5.2rem)}
-.hero h1 em{display:block;font-style:normal;color:var(--vermelho-claro)}
-.hero p{font-size:1.2rem;color:#d9d5d7;max-width:30em;margin:22px 0 30px}
-.botoes{display:flex;flex-wrap:wrap;gap:14px}
-.prova{display:flex;align-items:center;gap:14px;margin-top:32px;color:#d9d5d7;font-size:.98rem}
-.estrelas{display:flex;color:#FFC83D}
-.estrelas .icone{fill:currentColor;stroke:none;width:1.2em;height:1.2em}
-.hero-img{position:relative;aspect-ratio:4/5;border-radius:20px;overflow:hidden;border:1px solid var(--linha);
-  background:radial-gradient(circle at 60% 40%,rgba(229,16,47,.5),var(--grafite) 70%)}
-.hero-img img{width:100%;height:100%;object-fit:cover;display:block}
-.selo{position:absolute;left:16px;bottom:16px;background:#fff;color:var(--texto);border-radius:12px;padding:10px 16px;font-weight:700;font-size:.95rem;display:flex;align-items:center;gap:10px;box-shadow:0 10px 30px rgba(0,0,0,.35)}
-.selo .icone{color:var(--vermelho)}
+/* ===== Hero com Vídeo de Fundo ===== */
+.hero {
+  position: relative;
+  width: 100%;
+  min-height: 85vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  color: #fff;
+  padding: 80px 0;
+  text-align: center;
+  background: var(--preto);
+}
+
+.hero-video-bg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: 1;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(11, 11, 13, 0.70); /* Camada escura para dar destaque ao texto */
+  z-index: 2;
+}
+
+.hero .wrap {
+  position: relative;
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero h1 {
+  font-size: clamp(2.5rem, 5.5vw, 4.5rem);
+  max-width: 18ch;
+  margin: 0 auto;
+}
+
+.hero h1 em {
+  display: inline;
+  font-style: normal;
+  color: var(--vermelho-claro);
+}
+
+.hero p {
+  font-size: 1.2rem;
+  color: #d9d5d7;
+  max-width: 32em;
+  margin: 20px auto 30px;
+}
+
+.botoes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  justify-content: center;
+}
+
+.prova {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  margin-top: 32px;
+  color: #d9d5d7;
+  font-size: .98rem;
+}
+
+.estrelas {
+  display: flex;
+  color: #FFC83D;
+}
+
+.estrelas .icone {
+  fill: currentColor;
+  stroke: none;
+  width: 1.2em;
+  height: 1.2em;
+}
 
 /* ===== Números ===== */
-.numeros{background:var(--grafite);color:#fff;padding:38px 0}
+.numeros{background:var(--grafite);color:#fff;padding:38px 0;position:relative;z-index:10}
 .numeros .wrap{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;text-align:center}
 .numeros b{display:block;font-family:'Anton',sans-serif;font-weight:400;font-size:2.6rem;color:var(--vermelho-claro);line-height:1.1}
 .numeros span{color:#cfcacd;font-size:.98rem}
@@ -126,7 +201,6 @@ details p{margin:12px 0 0;color:var(--suave)}
 /* ===== Chamada final ===== */
 .final{background:linear-gradient(110deg,#8E0016,#1a0509 65%);color:#fff;text-align:center}
 .final p{color:#e6e2e4;max-width:34em;margin:14px auto 30px}
-.final .botoes{justify-content:center}
 
 /* ===== Rodapé ===== */
 .rodape{background:var(--preto);color:#bdb8bb;padding:60px 0 28px;font-size:.98rem}
@@ -145,12 +219,10 @@ details p{margin:12px 0 0;color:var(--suave)}
 .cookies.ativo{display:flex}
 .cookies button{margin-left:auto}
 
-/* ===== Celular ===== */
+/* ===== Responsividade ===== */
 @media (max-width:900px){
   section{padding:60px 0}
   nav{display:none}
-  .hero .wrap{grid-template-columns:1fr}
-  .hero-img{aspect-ratio:16/11;order:-1}
   .numeros .wrap{grid-template-columns:1fr 1fr;row-gap:28px}
   .cards,.passos,.depoimentos{grid-template-columns:1fr}
   .card{min-height:340px}
@@ -167,7 +239,7 @@ details p{margin:12px 0 0;color:var(--suave)}
 </head>
 <body>
 
-<!-- Ícones reutilizáveis (não aparecem na tela) -->
+<!-- Ícones reutilizáveis -->
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
   <symbol id="i-carrinho" viewBox="0 0 24 24"><path d="M3 4h3l2.5 11h9.5L21 7H7"/><circle cx="9.5" cy="19" r="1.5"/><circle cx="17" cy="19" r="1.5"/></symbol>
   <symbol id="i-caminhao" viewBox="0 0 24 24"><path d="M2 6h11v10H2zM13 9h5l3 3v4h-8"/><circle cx="7" cy="17.5" r="2"/><circle cx="17" cy="17.5" r="2"/></symbol>
@@ -201,31 +273,34 @@ details p{margin:12px 0 0;color:var(--suave)}
 
 <main>
 
-  <!-- Hero -->
+  <!-- Hero com Vídeo -->
   <section class="hero" id="inicio">
+    <!-- Vídeo de Fundo -->
+    <video class="hero-video-bg" autoplay loop muted playsinline poster="hero.jpg">
+      <source src="seu-video.mp4" type="video/mp4">
+    </video>
+    
+    <!-- Camada de sobreposição escura -->
+    <div class="hero-overlay"></div>
+
+    <!-- Conteúdo centralizado -->
     <div class="wrap">
-      <div>
-        <h1>O universo <em>do anime</em> em um só lugar</h1>
-        <p>Mangás, action figures e camisetas originais dos seus animes favoritos, com compra segura e entrega rastreável.</p>
-        <div class="botoes">
-          <a class="btn js-loja" data-pos="hero" href="#"><svg class="icone"><use href="#i-carrinho"/></svg> Visite nosso site</a>
-          <a class="btn btn-contorno" href="#categorias">Ver categorias</a>
-        </div>
-        <div class="prova">
-          <div class="estrelas" aria-hidden="true">
-            <svg class="icone"><use href="#i-estrela"/></svg><svg class="icone"><use href="#i-estrela"/></svg><svg class="icone"><use href="#i-estrela"/></svg><svg class="icone"><use href="#i-estrela"/></svg><svg class="icone"><use href="#i-estrela"/></svg>
-          </div>
-          <span><b>4,9 de 5</b> na avaliação dos clientes</span>
-        </div>
+      <h1>O universo <em>do anime</em> em um só lugar</h1>
+      <p>Mangás, action figures e camisetas originais dos seus animes favoritos, com compra segura e entrega rastreável.</p>
+      <div class="botoes">
+        <a class="btn js-loja" data-pos="hero" href="#"><svg class="icone"><use href="#i-carrinho"/></svg> Visite nosso site</a>
+        <a class="btn btn-contorno" href="#categorias">Ver categorias</a>
       </div>
-      <div class="hero-img">
-        <img src="hero.jpg" alt="Personagens de anime, mangás e figuras de ação" onerror="this.style.display='none'">
-        <div class="selo"><svg class="icone"><use href="#i-escudo"/></svg>Compra 100% segura</div>
+      <div class="prova">
+        <div class="estrelas" aria-hidden="true">
+          <svg class="icone"><use href="#i-estrela"/></svg><svg class="icone"><use href="#i-estrela"/></svg><svg class="icone"><use href="#i-estrela"/></svg><svg class="icone"><use href="#i-estrela"/></svg><svg class="icone"><use href="#i-estrela"/></svg>
+        </div>
+        <span><b>4,9 de 5</b> na avaliação dos clientes</span>
       </div>
     </div>
   </section>
 
-  <!-- Números da empresa (valores de exemplo: troque pelos seus) -->
+  <!-- Números -->
   <div class="numeros">
     <div class="wrap">
       <div><b>+10 mil</b><span>pedidos entregues</span></div>
@@ -283,7 +358,7 @@ details p{margin:12px 0 0;color:var(--suave)}
     </div>
   </section>
 
-  <!-- Avaliações (depoimentos de exemplo: troque pelos reais) -->
+  <!-- Avaliações -->
   <section class="cinza" id="avaliacoes">
     <div class="wrap centro">
       <h2>Quem comprou, recomenda</h2>
@@ -360,7 +435,6 @@ details p{margin:12px 0 0;color:var(--suave)}
       <div>
         <h4>Redes sociais</h4>
         <ul>
-          <!-- TROQUE os # pelos links das suas redes -->
           <li><a href="#">Instagram</a></li>
           <li><a href="#">TikTok</a></li>
           <li><a href="#">YouTube</a></li>
@@ -384,12 +458,9 @@ details p{margin:12px 0 0;color:var(--suave)}
 </div>
 
 <script>
-/* ===== CONFIGURAÇÃO: troque só estas linhas ===== */
-var LOJA = "https://www.nakamastore.com.br";   // link do site de vendas
-var WHATSAPP = "5548999990000";                 // número com 55 + DDD + telefone
+var LOJA = "https://www.nakamastore.com.br";
+var WHATSAPP = "5548999990000";
 
-/* Todos os botões da página levam para a loja, com parâmetros UTM.
-   Os UTM mostram, no Google Analytics, qual botão trouxe cada visita. */
 document.querySelectorAll('.js-loja').forEach(function (a) {
   var sep = LOJA.indexOf('?') > -1 ? '&' : '?';
   a.href = LOJA + sep + 'utm_source=landing_page&utm_medium=site&utm_campaign=lancamento&utm_content=' + (a.dataset.pos || 'site');
@@ -397,11 +468,9 @@ document.querySelectorAll('.js-loja').forEach(function (a) {
   a.rel = 'noopener';
 });
 
-/* Botão do WhatsApp com mensagem pronta */
 document.getElementById('wa').href = 'https://wa.me/' + WHATSAPP + '?text=' +
   encodeURIComponent('Olá! Vim pela página da Anime Store e quero saber mais.');
 
-/* Aviso de cookies: aparece uma vez e lembra a escolha */
 (function () {
   var box = document.getElementById('cookies');
   try { if (!localStorage.getItem('cookies-ok')) box.classList.add('ativo'); } catch (e) { box.classList.add('ativo'); }
