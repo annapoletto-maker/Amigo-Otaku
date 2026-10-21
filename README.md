@@ -1,4 +1,4 @@
-# Amigo Otaku | Landing Page
+# オタクの友人 | Landing Page
 
 Landing page de uma loja fictícia de produtos de anime e cultura geek, criada como trabalho acadêmico.
 
@@ -49,4 +49,4 @@ Não é necessário instalar nada.
 - **Nome:** [Anna Luiza Poletto]
 - **Curso:** [ADS-Analise e Desenvolvimento de Sistemas]
 - **Turma:** [1º fase]
-- **Disciplina:** [Programação Web]
+- **Disciplina:** [Desenvolvimento Web]
