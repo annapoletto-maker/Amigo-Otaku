@@ -3,10 +3,10 @@
 Landing page de uma loja fictícia de produtos de anime e cultura geek, criada como trabalho acadêmico.
 
 ## Link da página
-[https://annapoletto-maker.github.io/オタクの友人/](https://annapoletto-maker.github.io/オタクの友人/)
+[https://annapoletto-maker.github.io/Amigo-Otaku/](https://annapoletto-maker.github.io/Amigo-Otaku/)
 
 ## Link do repositório
-[https://github.com/annapoletto-maker/オタクの友人](https://github.com/annapoletto-maker/オタクの友人)
+[https://github.com/annapoletto-maker/Amigo-Otaku](https://github.com/annapoletto-maker/Amigo-Otaku)
 
 ## Sobre o projeto
 A オタクの友人(Amigo Otaku) vende action figures, mangás, camisetas e itens de decoração dos animes mais populares. A landing page apresenta a loja e leva o visitante, por meio de um botão, ao site de vendas.
