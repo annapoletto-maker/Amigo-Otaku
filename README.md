@@ -1,15 +1,15 @@
-# Nakama Store | Landing Page
+# オタクの友人 | Landing Page
 
 Landing page de uma loja fictícia de produtos de anime e cultura geek, criada como trabalho acadêmico.
 
 ## Link da página
-[https://annapoletto-maker.github.io/Nakama-store/](https://annapoletto-maker.github.io/Nakama-store/)
+[https://annapoletto-maker.github.io/オタクの友人/](https://annapoletto-maker.github.io/オタクの友人/)
 
 ## Link do repositório
-[https://github.com/annapoletto-maker/Nakama-store](https://github.com/annapoletto-maker/Nakama-store)
+[https://github.com/annapoletto-maker/オタクの友人](https://github.com/annapoletto-maker/オタクの友人)
 
 ## Sobre o projeto
-A Nakama Store vende action figures, mangás, camisetas e itens de decoração dos animes mais populares. A landing page apresenta a loja e leva o visitante, por meio de um botão, ao site de vendas.
+A オタクの友人(Amigo Otaku) vende action figures, mangás, camisetas e itens de decoração dos animes mais populares. A landing page apresenta a loja e leva o visitante, por meio de um botão, ao site de vendas.
 
 **Público-alvo:** fãs de anime, mangá e cultura geek.
 **Objetivo:** divulgar a loja e direcionar o visitante para a compra.
