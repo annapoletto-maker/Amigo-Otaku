@@ -1,4 +1,4 @@
-# オタクの友人 | Landing Page
+# Amigo Otaku | Landing Page
 
 Landing page de uma loja fictícia de produtos de anime e cultura geek, criada como trabalho acadêmico.
 
