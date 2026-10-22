@@ -58,34 +58,20 @@ nav ul{display:flex;gap:30px;list-style:none;margin:0;padding:0}
 nav a{text-decoration:none;font-weight:600;font-size:.98rem}
 nav a:hover{color:var(--vermelho-claro)}
 
-/* ===== Hero com Vídeo de Fundo ===== */
-.hero {
-  position: relative;
-  width: 100%;
-  min-height: 85vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-  color: #fff;
-  padding: 80px 0;
-  text-align: center;
-  background: var(--preto);
-}
-
-.hero-video-bg {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  min-width: 100%;
-  min-height: 100%;
-  width: auto;
-  height: auto;
-  z-index: 1;
-  transform: translate(-50%, -50%);
-  object-fit: cover;
-}
-
+  /* ===== Hero ===== */
+  .hero {
+    position: relative;
+    width: 100%;
+    min-height: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    color: #fff;
+    padding: 80px 0;
+    text-align: center;
+    background: var(--preto) url(hero.jpg)
+  }
+  
 .hero-overlay {
   position: absolute;
   inset: 0;
@@ -274,12 +260,8 @@ details p{margin:12px 0 0;color:var(--suave)}
 
 <main>
 
-  <!-- Hero com Vídeo -->
+  <!-- Hero -->
   <section class="hero" id="inicio">
-    <!-- Vídeo de Fundo -->
-    <video class="hero-video-bg" autoplay loop muted playsinline poster="hero.jpg">
-      <source src="seu-video.mp4" type="video/mp4">
-    </video>
     
     <!-- Camada de sobreposição escura -->
     <div class="hero-overlay"></div>
