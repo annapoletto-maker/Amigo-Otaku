@@ -19,7 +19,6 @@ A オタクの友人(Amigo Otaku) vende action figures, mangás, camisetas e ite
 - Menu de navegação com acesso rápido às seções (Categorias, Vantagens, Como comprar, Avaliações e Dúvidas)
 - Faixa de números da loja (pedidos, produtos, nota e estados atendidos)
 - Botão "Visitar a loja" fixo no topo, que abre o site de vendas em uma nova aba
-- Título principal em balão de fala, no estilo mangá
 - Painéis de categorias: action figures, mangás e camisetas
 - Seção "como comprar" com o passo a passo da compra
 - Avaliações de clientes
@@ -59,6 +58,9 @@ Não é necessário instalar nada.
 
 ### Versão celular
 ![Versão celular](print-celular.jpeg)
+
+## Créditos
+As imagens de personagens de anime pertencem aos seus respectivos criadores e foram usadas para fins acadêmidos. A loja, o link de vendas e o contato são fictícios.
 
 ## Autor
 - **Nome:** [Anna Luiza Poletto]
