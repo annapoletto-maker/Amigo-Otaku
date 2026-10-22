@@ -43,8 +43,8 @@ Não é necessário instalar nada.
 ```
 
 ## Prints da página
-![Versão desktop](imagens.png)
-![Versão celular](imagens2.jpeg)
+![Versão desktop](print-desktop.png)
+![Versão celular](print-celular.jpeg)
 
 ## Autor
 - **Nome:** [Anna Luiza Poletto]
