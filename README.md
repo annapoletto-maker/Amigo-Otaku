@@ -15,14 +15,14 @@ A オタクの友人(Amigo Otaku) vende action figures, mangás, camisetas e ite
 **Objetivo:** divulgar a loja e direcionar o visitante para a compra.
 
 ## Funcionalidades
-- Menu de navegação com acesso rápido ás seções (Categorias, Vantagens, Como comprar, Avaliações e Dúvidas)
+- Menu de navegação com acesso rápido às seções (Categorias, Vantagens, Como comprar, Avaliações e Dúvidas)
 - Botão "Visitar a loja" fixo no topo, que abre o site de vendas em uma nova aba
 - Título principal em balão de fala, no estilo mangá
 - Painéis de categorias: action figures, mangás e camisetas
 - Seção "como comprar" com o passo a passo da compra
-- Avaliação de clientes
+- Avaliações de clientes
 - Perguntas frequentes (dúvidas)
-- chamada final com o botão "Acesse agora"
+- Chamada final com o botão "Acesse agora"
 - Rodapé com links da loja, ajuda e redes sociais
 - Botão flutuante de chat
 - Layout responsivo, que se adapta ao celular e ao computador
@@ -49,11 +49,14 @@ Não é necessário instalar nada.
 ```
 
 ## Prints da página
+### Versão desktop
 ![Versão desktop](print-desktop.png)
+
+### Versão celular
 ![Versão celular](print-celular.jpeg)
 
 ## Autor
 - **Nome:** [Anna Luiza Poletto]
-- **Curso:** [ADS-Analise e Desenvolvimento de Sistemas]
+- **Curso:** [ADS-Análise e Desenvolvimento de Sistemas]
 - **Turma:** [1ª fase]
 - **Disciplina:** [Desenvolvimento Web]
