@@ -39,7 +39,9 @@ Não é necessário instalar nada.
 ```
 /
 ├── index.html
-└── README.md
+├── README.md
+├── print-desktop.png
+└── print-celular.jpeg
 ```
 
 ## Prints da página
