@@ -35,7 +35,6 @@ A オタクの友人(Amigo Otaku) vende action figures, mangás, camisetas e ite
 - Google Fonts (Anton e Barlow)
 - Ícones em SVG feitos no próprio código
 - JavaScript (Links da loja com parâmetros ITN, botão de WhatsApp e aviso de cookies)
-- Vídeo de fundo na seção principal
 
 ## Como executar
 1. Baixe ou clone este repositório.
